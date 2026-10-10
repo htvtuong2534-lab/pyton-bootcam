@@ -1,11 +1,10 @@
-"""Additional checks for W1 cases not covered by the instructor's examples."""
-
 import pytest
 
 from members.phucloc.w1.grades import summary
 from members.phucloc.w1.rules import can_register_thesis, missing
 from members.phucloc.w1.text_tools import top_k, word_count
 from members.phucloc.w1.timetable import by_day
+from members.phucloc.w1.translate import binary_search
 
 
 def test_summary_rounds_an_odd_median_and_preserves_input():
@@ -49,3 +48,26 @@ def test_timetable_preserves_duplicates_and_input():
     entries = [("B", "Mon"), ("A", "Mon"), ("A", "Mon")]
     assert by_day(entries) == {"Mon": ["A", "A", "B"]}
     assert entries == [("B", "Mon"), ("A", "Mon"), ("A", "Mon")]
+
+
+@pytest.mark.parametrize(
+    "values, key, expected",
+    [
+        ([-4, -1, 0, 2, 8], -4, 0),
+        ([-4, -1, 0, 2, 8], 8, 4),
+        ([-4, -1, 0, 2, 8], -5, -1),
+        ([-4, -1, 0, 2, 8], 9, -1),
+        ([7], 7, 0),
+        ([7], 6, -1),
+    ],
+)
+def test_binary_search_boundaries(values, key, expected):
+    assert binary_search(values, key) == expected
+
+
+def test_binary_search_duplicate_keys_preserves_input():
+    values = [1, 2, 2, 2, 3]
+    position = binary_search(values, 2)
+    assert position in (1, 2, 3)
+    assert values[position] == 2
+    assert values == [1, 2, 2, 2, 3]

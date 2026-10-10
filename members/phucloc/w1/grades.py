@@ -1,12 +1,4 @@
-"""W1-1: summarise a non-empty list of grades."""
-
-
 def summary(scores: list[float]) -> dict[str, float]:
-    """Return minimum, maximum, mean and median without changing scores.
-
-    Mean and median are rounded to two decimal places. Empty input raises
-    ValueError because it has no minimum, maximum or median.
-    """
     if not scores:
         raise ValueError("scores must not be empty")
 
