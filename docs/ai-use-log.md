@@ -11,4 +11,3 @@
 | Scope | W1-1, W1-2, W1-3 and W1-5 only. W1-4 awaits assignment. No W2/W3 work. |
 | Verification | The instructor's W1 tests were downloaded unchanged to a temporary validation folder. The four relevant tests passed; W1-4 was explicitly deselected, not counted as passed. Additional edge-case tests and lint results are recorded in the PR. |
 | Human review | Pending Loc's reading and explanation of the generated code, followed by the team's assigned review. |
-
