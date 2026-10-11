@@ -1,56 +1,44 @@
-# Progress Tracker
+# Project Progress
 
-| Member | Week | Issue | PR | Reviewer | Tests | Hours |
-|--# Project Progress
+## Week 1 — Python Basics
 
-## Week 1 — Basics
+- [x] Complete Week 1 exercises
+- [x] Implement basic Python functions and data structures
+- [x] Run automated tests
+- [x] Verify current test results: 12 tests passed
 
-This file tracks the team's Week 1 Python homework. The exercises have been implemented, but tests still need to be run. GitHub Issues and Pull Requests have not been created yet.
+## Week 2 — Python Intermediate
 
-### Team Progress
+- [ ] Complete Week 2 exercises
+- [ ] Run Week 2 tests
+- [ ] Verify all Week 2 tests pass
 
-| Member | Issue | Pull Request | Reviewer | Tests Passed | Estimated Hours | Actual Hours | Status |
-|---|---|---|---|---|---|---|---|
-| viettuong | - | - | - | - | - | - | Implemented; tests pending |
-| phucloc | - | - | - | - | - | - | Implemented; tests pending |
-| hienluong | - | - | - | - | - | - | Implemented; tests pending |
-| viettan | - | - | - | - | - | - | Implemented; tests pending |
-| minhquan | - | - | - | - | - | - | Implemented; tests pending |
+## Week 3 — Python Advanced
 
-### Week 1 Exercises
+- [ ] Complete Week 3 exercises
+- [ ] Run Week 3 tests
+- [ ] Verify all Week 3 tests pass
 
-| Exercise | File | Description | Status |
-|---|---|---|---|
-| W1-1 | `grades.py` | Calculate minimum, maximum, mean, and median scores. Raise `ValueError` for an empty list. | Implemented; tests pending |
-| W1-2 | `text_tools.py` | Count words and return the top-k words, sorted by frequency descending and alphabetically for ties. | Implemented; tests pending |
-| W1-3 | `rules.py` | Check thesis registration requirements and return missing requirements. | Implemented; tests pending |
-| W1-4 | `translate.py` | Translate the assigned C++ function into Python. | Implemented; tests pending |
-| W1-5 | `timetable.py` | Group courses by day and sort the course names for each day. | Implemented; tests pending |
+## Shared Study Planner
 
-### Status Definitions
+- [ ] Define the study planner interface and contract
+- [ ] Implement the study planner module
+- [ ] Integrate with `shared/contract.py`
+- [ ] Add and run tests for the study planner
+- [ ] Verify compatibility with team members' code
 
-- **Not started:** Work has not begun.
-- **In progress:** Work is still being implemented.
-- **Implemented; tests pending:** Code has been written, but tests have not yet been run.
-- **In review:** A Pull Request is open and awaiting review.
-- **Completed:** Required tests pass and the Pull Request has been merged.
+## Testing
 
-### Next Steps
+- Current status: 12 tests passed
+- Week 1: Tests currently passing
+- Week 2: Pending verification
+- Week 3: Pending verification
+- Study Planner: Pending implementation and testing
 
-1. Run the Week 1 tests from the repository root.
-2. Record the actual test results in the `Tests Passed` column.
-3. Create one GitHub Issue per member for Week 1 and record the actual Issue number.
-4. Open Pull Requests when the work is ready for review and record the actual PR numbers.
-5. Assign reviewers and update the hours and status using actual information.
+## Next Steps
 
-### Notes
-
-- A dash (`-`) means the information has not been recorded yet.
-- Do not enter test counts, Issue/PR numbers, or hours until they are known.
-- Update this file as the team makes progress.------|------|-------|----|----------|-------|-------|
-| viettuong | w1 | TBD | TBD | TBD | TBD | TBD |
-| phucloc | w1 | TBD | TBD | TBD | TBD | TBD |
-| hienluong | w1 | TBD | TBD | TBD | TBD | TBD |
-| quocdat | w1 | TBD | TBD | TBD | TBD | TBD |
-| viettan | w1 | TBD | TBD | TBD | TBD | TBD |
-| minhquan | w1 | TBD | TBD | TBD | TBD | TBD |
+1. Complete the shared study planner module.
+2. Run the full test suite using `pytest -q`.
+3. Fix any failing tests.
+4. Update this progress file when tasks are completed.
+5. Commit and push the verified changes to GitHub.
