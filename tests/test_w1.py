@@ -1,10 +1,10 @@
 import pytest
 
-from members.viettuong.w1.bai1 import summary
-from members.viettuong.w1.bai2 import wordcount, topk
-from members.viettuong.w1.bai3 import can_register_thesis, missing
-from members.viettuong.w1.bai4 import transpose_matrix
-from members.viettuong.w1.bai5 import by_day
+from members.quocdat.w1.bai1 import summary
+from members.quocdat.w1.bai2 import word_count, top_k
+from members.quocdat.w1.bai3 import can_register_thesis, missing
+from members.quocdat.w1.bai4 import insertion_sort
+from members.quocdat.w1.bai5 import by_day
 
 
 # W1-1: Score summary
@@ -30,8 +30,8 @@ def test_summary_empty():
 
 # W1-2: Word count and top-k
 
-def test_wordcount():
-    assert wordcount("Git is fun. Git is fast!") == {
+def test_word_count():
+    assert word_count("Git is fun. Git is fast!") == {
         "git": 2,
         "is": 2,
         "fun": 1,
@@ -39,15 +39,15 @@ def test_wordcount():
     }
 
 
-def test_topk():
-    assert topk("Git is fun. Git is fast!", 2) == [
+def test_top_k():
+    assert top_k("Git is fun. Git is fast!", 2) == [
         ("git", 2),
         ("is", 2),
     ]
 
 
-def test_topk_empty_text():
-    assert topk("", 3) == []
+def test_top_k_empty_text():
+    assert top_k("", 3) == []
 
 
 # W1-3: Thesis registration rules
@@ -66,19 +66,14 @@ def test_missing():
     assert missing(120, 2.0) == []
 
 
-# W1-4: Matrix transpose
+# W1-4: Insertion sort
 
-def test_transpose_matrix():
-    assert transpose_matrix([[1, 2, 3], [4, 5, 6]]) == [
-        [1, 4],
-        [2, 5],
-        [3, 6],
-    ]
+def test_insertion_sort():
+    assert insertion_sort([5, 2, 4, 1, 3]) == [1, 2, 3, 4, 5]
 
 
-def test_transpose_empty_matrix():
-    assert transpose_matrix([]) == []
-    assert transpose_matrix([[]]) == []
+def test_insertion_sort_empty():
+    assert insertion_sort([]) == []
 
 
 # W1-5: Group courses by day
