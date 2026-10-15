@@ -1,10 +1,10 @@
 import pytest
 
-from members.quocdat.w1.bai1 import summary
-from members.quocdat.w1.bai2 import word_count, top_k
-from members.quocdat.w1.bai3 import can_register_thesis, missing
-from members.quocdat.w1.bai4 import insertion_sort
-from members.quocdat.w1.bai5 import by_day
+from members.quocdat.w1.grades import summary
+from members.quocdat.w1.text_tools import word_count, top_k
+from members.quocdat.w1.rules import can_register_thesis, missing
+from members.quocdat.w1.translate import insertion_sort
+from members.quocdat.w1.timetable import by_day
 
 
 # W1-1: Score summary
