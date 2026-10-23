@@ -9,6 +9,6 @@ def missing(credits: int, gpa: float) -> list[str]:
         reasons.append(f"need {120 - credits} more credits")
 
     if gpa < 2.0:
-        reasons.append(f"need GPA of {2.0 - gpa:.1f} more")
+        reasons.append(f"need GPA of at least 2.0 (current: {gpa})")
 
     return reasons
